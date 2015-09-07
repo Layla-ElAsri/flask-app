@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="../static/style.css" type="text/css" />
+<title>Data Selection</title>
+</head>
+<body>
+<div class=page>
+  <h1>Exploring the scientific procedures on animals in the UK</h1>
+  <div class=metanav>
+
+    <h4>
+      <font color="red">{{message}}</font>
+      <br><br>
+      Select the type of animal, the start year and the end year.
+      <br><br>
+      The dataset is provided by Quandl.  
+      <a href= https://www.quandl.com/data/GUARDIAN/ANIMAL_TESTING-Scientific-procedures-on-animals-UK>Visit the Quandl page</a>
+    </h4>
+
+<form id='user_input' method='post' action='getting_form' >
+    <p>Animal Type</p>
+    <select name="Animal_Type">
+    <option value="Mouse">Mouse<Mouse/option>
+    <option value="Rat">Rat</option>
+    <option value="Other Rodent">Other Rodent</option>
+    <option value="Rabbit">Rabbit</option>
+    <option value="Carnivore">Carnivore</option>
+    <option value="Ungulate (deer)">Ungulate (deer)</option>
+    <option value="Primate">Primate</option>
+    <option value="Other Mammal">Other Mammal</option>
+    <option value="Bird">Bird</option>
+    <option value="Reptile/Amphibian">Reptile/Amphibian</option>
+    <option value="Fish">Fish</option>
+    <option value="All">All</option>
+    </select>
+    <br><br>
+    <p>Start Year</p>
+    <select name="Start_Year">
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    </select>
+    <br><br>
+    <p>End Year</p>
+    <select name="End_Year">
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    </select>
+    <br><br>
+    <input type='submit' value='Submit' />
+</form>
+
+  </div>
+</div>
+</body>
+</html>
