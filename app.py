@@ -56,7 +56,7 @@ def getting_form():
     start_year = int(request.form['Start_Year'])
     end_year = int(request.form['End_Year'])
     if end_year <= start_year:
-    	return render_template('form.html', message = "Please select an end year posterior to the start year.")
+    	return render_template('form.html', message = "Please select an end year later than the start year.")
     animal = request.form['Animal_Type']
     if animal == "All":
     	animal = "Total"
