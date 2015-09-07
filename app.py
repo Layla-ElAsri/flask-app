@@ -5,7 +5,6 @@ import pandas as pd
 from bokeh.plotting import figure
 from bokeh.resources import CDN
 from bokeh.embed import file_html, components
-import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
